@@ -1,0 +1,60 @@
+//imports
+@import url('https://fonts.googleapis.com/css?family=Inconsolata&display=swap');
+
+// variables
+$terminalFont:'Inconsolata', monospace;
+$barColor:#524e46;
+$onBarText:#9e9992;
+$terminalFontColor:#00ff00;
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+#main{
+    height: 100vh;
+    width:100vw;
+    background-color:black;
+}
+
+#topBar{
+    height:auto;
+    width:100vw;
+    background-color:$barColor;
+}
+
+
+.barCircle{
+    height:12px;
+    width:12px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left:10px;
+}
+
+#topBar #barText{
+    font-family:$terminalFont;
+    color:$onBarText;
+    display:inline;
+    position: relative;
+    left:40vw;
+}
+
+.terminalText{
+    font-family: $terminalFont;
+    color:$terminalFontColor;
+}
+
+.terminalTextRender{
+    display:none
+}
+
+.centerPosition{
+    margin: auto;
+}
+
+#logo{
+    height: 30vh;
+    border:2px solid green
+}
